@@ -7,7 +7,7 @@
 
 #### There is also a [readme page](index/index.html), there you can also find a link for [2nd](2ndChallenge/date-format.html) and [3rd](3rdChalenge/index.html) challenge. 
 
-How to run tests:
+How to run 1st challenge tests:
 
     cd 1stChalenge
     composer install
