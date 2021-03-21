@@ -1,0 +1,85 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+        <title>CrossKnowledge - Code challenge</title>
+    </head>
+    <script>
+      function copyCommands(){
+        let copyText = document.getElementById('tutorial').textContent;
+
+        const textArea = document.createElement('textarea');
+        textArea.textContent = copyText;
+        textArea.id = "copy_area";
+        document.body.append(textArea);
+
+        textArea.select();
+        textArea.style.display = "none";
+        textArea.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+      }
+    </script>
+    <body class="border--none margin--none">
+        <header class="header outlined spaced__left__small spaced__right__small">
+            <a href="https://www.crossknowledge.com/" target="_blank">
+                <img class="logo" src="../1stChalenge/assets/logo-crossknowledge.svg" alt="CrossKnowledge logo">
+            </a>
+            <a title="3rd challenge" target="_blank" href="../3rdChalenge/index.html" class="outlined button rounded--xsmall text--black spaced--around text__roboto span__half float__right">3rd</a>
+            <a title="2nd challenge" target="_blank" href="../2ndChalenge/date-format.html" class="outlined button rounded--xsmall text--black spaced--around text__roboto span__half float__right">2nd</a>
+        </header>
+        <div class="row">
+            <div class="row">
+                <div class="row spaced__large spaced--around spaced__top__small text--responsive">
+                    <h1 class="text__roboto text-thin text--left">Hello!</h1>
+                    <h2 class="text__roboto text-thin">My name is Eduardo Moro,</h2>
+                    <p class="text__roboto text-thin">
+                        This is my Technical challenge submission.<br>
+                        First things first, i will explain how to run my competition of challenge number 1, "Cache function":
+                    </p>
+
+                    <h4 class="text__roboto text-thin">What i used in this 'project':</h4>
+                    <ul class="text__roboto text-thin list__square">
+                        <li>Composer;</li>
+                        <li>Php Unit;</li>
+                        <li>Redis.</li>
+                    </ul>
+
+                    <h3 class="text__roboto text-thin">How to run tests:</h3>
+
+<pre class="span8 darkergray spaced__large rounded--xsmall code text--white" id="tutorial">
+    <code>cd 1stChalenge</code>
+    <code>composer install</code>
+    <code>php -S localhost:8080 simpleFakeApi.php | composer run test</code>
+</pre>
+                    <div class="flex-between" style="width: calc(80% + 64px">
+                        <i></i>
+                        <a class="button outlined rounded--xsmall" onclick="copyCommands('tutorial')"> copy </a>
+                    </div>
+
+                <h4 class="text__roboto text-thin">What will this test do?</h4>
+                <ul class="text__roboto text-thin list__square">
+                    <li>Create a "Cache" class instance;</li>
+                    <li>Test redis connection (Ping);</li>
+                    <li>Save a test json to redis;</li>
+                    <li>Retrieve test json from redis;</li>
+                    <li>Flush all redis keys;</li>
+                    <li>Retrieve test json again, expecting it is not found;</li>
+                    <br>
+                    <li>Make a post request to fake api;</li>
+                    <li>Make a get request to fake api.</li>
+                </ul>
+
+
+                <h4 class="text__roboto text-thin">That`s all, than you for all your attention!</h4>
+
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
+
+
