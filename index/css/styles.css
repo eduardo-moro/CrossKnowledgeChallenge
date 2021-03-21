@@ -40,6 +40,16 @@
     color: white;
 }
 
+.text--blue
+{
+    color: #119BD1;
+}
+
+.text--spaced
+{
+    letter-spacing: 6px;
+}
+
 .flex-between
 {
     display: flex;
@@ -149,6 +159,16 @@
 .outlined__large
 {
     border-width: 2px;
+    border-color: #119BD1;
+}
+
+.outlined__large:hover
+{
+    border-width: 2px !important;
+    border-color: #119BD1 !important;
+    background: #119BD1;
+    color: white;
+    font-weight: 700 !important;
 }
 
 .button
@@ -269,5 +289,10 @@ body
         transition: 1s;
         width: 80%;
     }
+}
+
+h1
+{
+    font-size: 52px;
 }
 
