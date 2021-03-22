@@ -5,7 +5,7 @@
 ![redis version](https://img.shields.io/badge/redis-5.0.7-green)
 
 
-#### There is also a [readme page](index/index.html), there you can also find a link for [2nd](2ndChallenge/date-format.html) and [3rd](3rdChalenge/index.html) challenge. 
+#### There is also a [readme page](https://eduardo-moro.github.io/CrossKnowledgeChallenge/index/index.html), there you can also find a link for [2nd](2ndChallenge/date-format.html) and [3rd](3rdChalenge/index.html) challenge. 
 
 How to run 1st challenge tests:
 
